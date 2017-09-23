@@ -13,7 +13,6 @@ import javax.validation.constraints.NotNull;
         @JsonSubTypes.Type(name = Vehicle.AEROPLANE, value = Aeroplane.class),
         @JsonSubTypes.Type(name = Vehicle.BICYCLE, value = Bicycle.class),
         @JsonSubTypes.Type(name = Vehicle.CAR, value = Car.class),
-        @JsonSubTypes.Type(name = Vehicle.SCOOTER, value = Scooter.class),
         @JsonSubTypes.Type(name = Vehicle.TRUCK, value = Truck.class)
         })
 public abstract class Vehicle {
@@ -21,7 +20,6 @@ public abstract class Vehicle {
     public static final String AEROPLANE = "AEROPLANE";
     public static final String BICYCLE = "BICYCLE";
     public static final String CAR = "CAR";
-    public static final String SCOOTER = "SCOOTER";
     public static final String TRUCK = "TRUCK";
 
     @NotNull
